@@ -49,7 +49,7 @@ keells_scraper/
 │   ├── keells_category.png
 │   └── keells_snacks_view.png
 └── keells_all.csv                  # Final output CSV after spider run
-
+```
 
 
 ## 🛠 Requirements
