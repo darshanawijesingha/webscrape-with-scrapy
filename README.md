@@ -31,22 +31,24 @@ This Scrapy project scrapes product data from [Keells Supermarket](https://www.k
 
 ## 📁 Project Structure
 
+## 📂 Project Structure
+
+```text
 keells_scraper/
-│
-├── scrapy.cfg
-├── keells_scraper/
-│ ├── init.py
-│ ├── items.py
-│ ├── middlewares.py
-│ ├── pipelines.py
-│ ├── settings.py
-│ └── spiders/
-│ └── all_keells_categories.py ← your spider
-├── screenshots/
-│ ├── keells_home.png
-│ ├── keells_category.png
-│ └── keells_snacks_view.png
-└── keells_all.csv (output after run)
+├── scrapy.cfg                       # Scrapy project configuration file
+├── keells_scraper/                 # Main project module
+│   ├── __init__.py
+│   ├── items.py                    # Define item structures
+│   ├── middlewares.py              # Custom middlewares (optional)
+│   ├── pipelines.py                # Item pipelines (optional)
+│   ├── settings.py                 # Project settings (configure feed/export here)
+│   └── spiders/
+│       └── all_keells_categories.py   # The spider that scrapes all categories
+├── screenshots/                    # Screenshots folder used in README
+│   ├── keells_home.png
+│   ├── keells_category.png
+│   └── keells_snacks_view.png
+└── keells_all.csv                  # Final output CSV after spider run
 
 
 
